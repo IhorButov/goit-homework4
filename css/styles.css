@@ -1,3 +1,12 @@
+
+  .icon.with-bg {
+    background-color: #ff9800;
+  }
+  
+  .icon.with-icon {
+    background-image: url("https://cdn2.iconfinder.com/data/icons/avatars-60/5985/34-Father-512.png");
+  }
+
 :root {
     --logo-primary-text: #000000;
     --hero-text-color: #FFFFFF;
