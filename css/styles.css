@@ -145,12 +145,23 @@ html {
 .nav-link:focus {
   color: var(--accent-color);
 }
+
 .header-contancts-links {
   font-weight: 500;
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: #757575;
 }
+
+.header-item {
+  display: inline-flex;
+}
+.header-contancts-links::before {
+  content: "";
+  width: 16px;
+  height: 12px;
+}
+
 .header-contancts-links:hover,
 .header-contancts-links:focus,
 .map:hover,
@@ -256,7 +267,7 @@ html {
 
 /* --- Hero Button ---  */
 .hero-button {
-  display: inline-block;
+  display: border-box;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.87;
@@ -286,6 +297,9 @@ html {
 }
 
 .features-icon-container {
+  width: 270px;
+  height: 120px;
+  margin-bottom: 30px;
   background-color: var(--features-bg-color);
 }
 
@@ -342,6 +356,7 @@ html {
 .team-job {
   font-weight: 400;
   font-size: 16px;
+  margin-bottom: 16px;
   line-height: 1.18;
   text-align: center;
   color: var(--primary-text-color);
@@ -358,7 +373,21 @@ html {
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
 }
+.team-social-link {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  color: red;
+  background-color: green;
+  display: block;
+}
+.team-social-list {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
 
+/* --- PORTFOLIO PAGE ---*/
 .section-portfolio {
   padding: 94px 0;
 }
