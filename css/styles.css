@@ -8,10 +8,11 @@
   --title-text-color: #212121;
   --accent-color: #2196f3;
   --primaty-bg-color: #ffffff;
-  --section-background-color: #cccccc;
+  --section-background-color: #f5f4fa;
   --filterbutton-main-color: #212121;
   --filterbutton-bg-color: #f5f4fa;
   --filterbutton-secondbg-color: #2196f3;
+  --features-bg-color: #f5f4fa;
   --main-font: Roboto, sand-serif;
 }
 
@@ -283,6 +284,11 @@ html {
 .section-features {
   padding: 94px 0;
 }
+
+.features-icon-container {
+  background-color: var(--features-bg-color);
+}
+
 .features-title {
   margin-bottom: 10px;
   font-weight: 700;
@@ -419,7 +425,7 @@ html {
   background-color: var(--filterbutton-secondbg-color);
 }
 
-/* --- Рукщ ифслпкщгтв --- */
+/* --- Hero Overlay --- */
 .overlay {
   height: 600px;
   max-width: 1600px;
