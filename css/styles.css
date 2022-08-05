@@ -13,6 +13,7 @@
   --filterbutton-bg-color: #f5f4fa;
   --filterbutton-secondbg-color: #2196f3;
   --features-bg-color: #f5f4fa;
+  --main-icon-color: #afb1b8;
   --main-font: Roboto, sand-serif;
 }
 
@@ -373,21 +374,55 @@ html {
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
 }
-.team-social-link {
-  width: 44px;
-  height: 44px;
-  border-radius: 50%;
-  color: red;
-  background-color: green;
-  display: block;
-}
 .team-social-list {
   display: flex;
   justify-content: center;
   gap: 10px;
 }
+.team-social-link {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.team-social-link:hover,
+.team-social-link:focus {
+  background-color: var(--accent-color);
+}
+.team-social-link:hover .team-icon,
+.team-social-link:focus .team-icon {
+  fill: var(--filterbutton-bg-color);
+}
+.team-icon {
+  fill: var(--main-icon-color);
+}
 
-/* --- PORTFOLIO PAGE ---*/
+/* --- Клиенты --- */
+.section-clients {
+  padding: 94px 0;
+}
+.clients {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+  justify-content: center;
+}
+.clients-link {
+  width: 170px;
+  height: 92px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.client-item {
+  border: 1px solid #afb1b8;
+  border-radius: 3%;
+}
+
+/* --- PORTFOLIO PAGE --- */
 .section-portfolio {
   padding: 94px 0;
 }
