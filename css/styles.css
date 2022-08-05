@@ -403,22 +403,15 @@ html {
 .section-clients {
   padding: 94px 0;
 }
-.clients {
+.clients-list {
   display: flex;
-  gap: 30px;
   align-items: center;
   justify-content: center;
+  gap: 30px;
 }
 .clients-link {
-  width: 170px;
-  height: 92px;
   display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.client-item {
-  border: 1px solid #afb1b8;
+  border: 1px solid var(--main-icon-color);
   border-radius: 3%;
 }
 
