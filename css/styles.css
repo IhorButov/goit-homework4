@@ -208,6 +208,12 @@ html {
 }
 
 /* --- Футер ---  */
+.container-footer {
+  display: flex;
+}
+.address-container {
+  margin-right: 70px;
+}
 .footer {
   padding: 60px 0;
   background: var(--footer-background-color);
@@ -240,7 +246,7 @@ html {
   line-height: 1.19;
   color: var(--logo-primary-text);
 }
-/* .footer-logo {display: block; margin:auto; margin-bottom: 20px;} */
+
 .address-list .adress-item:not(:last-child) {
   margin-bottom: 9px;
 }
@@ -447,7 +453,6 @@ html {
 }
 .join-list {
   display: flex;
-  align-items: center;
   justify-content: center;
   gap: 10px;
 }
@@ -457,26 +462,13 @@ html {
   height: 44px;
   border-radius: 50%;
   justify-content: center;
+  background: rgba(255, 255, 255, 0.1);
   align-items: center;
-  background-color: rgba(255, 255, 255, 0.1);
+}
+.join-icon {
   fill: var(--second-icon-color);
 }
-.join-item {
-  fill: #2196f3;
-}
 /* ------------------------------------------ */
-/*
-.team-social-link:hover,
-.team-social-link:focus {
-  background-color: var(--accent-color);
-}
-.team-social-link:hover .team-icon,
-.team-social-link:focus .team-icon {
-  fill: var(--filterbutton-bg-color);
-}
-.team-icon {
-  fill: var(--main-icon-color);
-}*/
 
 /* --- PORTFOLIO PAGE --- */
 .section-portfolio {
