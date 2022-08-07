@@ -452,17 +452,20 @@ html {
   gap: 10px;
 }
 .join-link {
+  display: flex;
   width: 44px;
   height: 44px;
   border-radius: 50%;
-  display: flex;
   justify-content: center;
   align-items: center;
-  background: rgba(255, 255, 255, 0.1);
+  background-color: rgba(255, 255, 255, 0.1);
   fill: var(--second-icon-color);
 }
-/* --- */
-
+.join-item {
+  fill: #2196f3;
+}
+/* ------------------------------------------ */
+/*
 .team-social-link:hover,
 .team-social-link:focus {
   background-color: var(--accent-color);
@@ -473,7 +476,7 @@ html {
 }
 .team-icon {
   fill: var(--main-icon-color);
-}
+}*/
 
 /* --- PORTFOLIO PAGE --- */
 .section-portfolio {
