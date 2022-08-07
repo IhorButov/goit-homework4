@@ -128,7 +128,7 @@ html {
 }
 
 /* --- Хэдер ---  */
-.header {
+.main-header {
   border-bottom: 1px solid #ececec;
 }
 .nav-link {
@@ -148,20 +148,22 @@ html {
   color: var(--accent-color);
 }
 
-.header-contancts-links {
+.mail-link,
+.phone-link {
+  display: flex;
   font-weight: 500;
   line-height: 1.14;
   letter-spacing: 0.02em;
-  color: #757575;
+  fill: var(--primary-text-color);
 }
 
-.header-item {
-  display: inline-flex;
+.phone-icon,
+.mail-icon {
+  margin-right: 10px;
 }
-.header-contancts-links::before {
-  content: "";
-  width: 16px;
-  height: 12px;
+.mail-link,
+.phone-link {
+  fill: currentColor;
 }
 
 .header-contancts-links:hover,
@@ -187,7 +189,7 @@ html {
 .header-nav-list {
   margin-right: auto;
 }
-.header .container {
+.main-header .container {
   display: flex;
   align-items: center;
 }
@@ -203,7 +205,7 @@ html {
 .header-contacts {
   gap: 50px;
 }
-.header .header-contacts {
+.main-header .header-contacts {
   margin-left: auto;
 }
 
@@ -271,6 +273,22 @@ html {
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--hero-text-color);
+}
+/* --- Hero Overlay --- */
+.overlay {
+  height: 600px;
+  max-width: 1600px;
+  margin-right: auto;
+  margin-left: auto;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-image: linear-gradient(
+      to right,
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(../images/hero-overlay.jpg);
 }
 
 /* --- Hero Button ---  */
@@ -464,10 +482,14 @@ html {
   justify-content: center;
   background: rgba(255, 255, 255, 0.1);
   align-items: center;
-}
-.join-icon {
   fill: var(--second-icon-color);
 }
+
+.join-link:hover,
+.join-link:focus {
+  background: var(--filterbutton-secondbg-color);
+}
+
 /* ------------------------------------------ */
 
 /* --- PORTFOLIO PAGE --- */
@@ -528,7 +550,6 @@ html {
 .portfolio-item {
   width: 370px;
   width: cacl ((100% - 60px)/3);
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 .filter-button:hover,
@@ -536,20 +557,10 @@ html {
   color: var(--filterbutton-bg-color);
   background-color: var(--filterbutton-secondbg-color);
 }
-
-/* --- Hero Overlay --- */
-.overlay {
-  height: 600px;
-  max-width: 1600px;
-  margin-right: auto;
-  margin-left: auto;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  background-image: linear-gradient(
-      to right,
-      rgba(47, 48, 58, 0.4),
-      rgba(47, 48, 58, 0.4)
-    ),
-    url(../images/hero-overlay.jpg);
+.portfolio-link {
+  display: block;
+}
+.portfolio-link:hover,
+.portfolio-link:focus {
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
