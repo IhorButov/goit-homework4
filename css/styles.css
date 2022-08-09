@@ -152,15 +152,17 @@ html {
 .mail-link,
 .phone-link {
   display: flex;
+  align-items: center;
   font-weight: 500;
   line-height: 1.14;
   letter-spacing: 0.02em;
-  fill: var(--primary-text-color);
+  color: var(--primary-text-color);
 }
 
 .phone-icon,
 .mail-icon {
   margin-right: 10px;
+  fill: currentColor;
 }
 .mail-link,
 .phone-link {
@@ -198,6 +200,7 @@ html {
   padding-top: 10px;
   padding-bottom: 10px;
 }
+
 .header-contacts .header-contancts-links {
   padding-top: 10px;
   padding-bottom: 10px;
@@ -213,6 +216,7 @@ html {
 /* --- Футер ---  */
 .container-footer {
   display: flex;
+  align-items: baseline;
 }
 .address-container {
   margin-right: 70px;
@@ -327,14 +331,13 @@ html {
   width: 270px;
   height: 120px;
   margin-bottom: 30px;
+  border-radius: 4px;
   background-color: var(--features-bg-color);
-}
-.features-icon {
-  margin: 25px 100px;
+  padding: 25px 100px;
 }
 
 .features-title {
-  margin-bottom: 10px;
+  margin-bottom: 10px1;
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
@@ -415,17 +418,16 @@ html {
   display: flex;
   justify-content: center;
   align-items: center;
+  color: var(--main-icon-color-color);
 }
 .team-social-link:hover,
 .team-social-link:focus {
   background-color: var(--accent-color);
+  color: var(--hero-text-color);
 }
-.team-social-link:hover .team-icon,
-.team-social-link:focus .team-icon {
-  fill: var(--filterbutton-bg-color);
-}
+
 .team-icon {
-  fill: var(--main-icon-color);
+  fill: currentColor;
 }
 
 /* --- Клиенты --- */
@@ -442,7 +444,7 @@ html {
   width: 170px;
   height: 92px;
   border: 1px solid #afb1b8;
-  border-radius: 3%;
+  border-radius: 4px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -463,7 +465,7 @@ html {
   display: block;
 }
 .join-title {
-  margin-bottom: 30px;
+  margin-bottom: 20px;
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
@@ -563,5 +565,6 @@ html {
 }
 .portfolio-link:hover,
 .portfolio-link:focus {
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
 }
